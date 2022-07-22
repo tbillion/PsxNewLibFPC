@@ -80,7 +80,7 @@ protected:
 
 			delayMicroseconds (HOLD_TIME);
 			
-			if (dat) {
+			if (digitalRead(dat)) {
 				bitSet (in, i);
 			}
 
